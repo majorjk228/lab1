@@ -22,68 +22,17 @@ int main()
     // объект класса
     fraction fract;
     
-    fract.Read(); // Вызываем метод для инциализации введенных данных
-    cost_fraction(fract);
-    //fract.Show(); // Выводим данные
+    fract.Read();          // Вызываем метод для инциализации введенных данных с клавиатуры
+    cost_fraction(fract);  // Отправляем наш объект на вывод
 
-    //fract.Init(fract.Read());
-    //cost_fraction();
-    //fract.Show();
+    
+    cout << "\n";
+    cout << "Передаем константные данные из кода: \n " << endl;      // Инцилизация перменный в коде 
+    cout << "Стоимость товара: 5 и Кол-во товаров: 3 " << endl;
+    fract.Init(5, 3);
+    fract.Show(); // Выводим данные
 
-    /*fract = cost_fraction();*/
-    //fraction F = make_fraction(y, z);
-    //A.Init(5, 3);//инициализация переменной А
-    //B.Read();//ввод полей переменных В
-    //A.Show();//вывод значений полей переменной А
-    //B.Show();//вывод значений полей переменной В
-    ////вывод значения степени, вычисленного с помощью функции Power()
-    //cout << "A.Power(" << A.first << "," << A.second << ")=" << A.Power() << endl;
-    //cout << "B.Power(" << B.first << "," << B.second << ")=" << B.Power() << endl;
-    ////указатели
-    //fraction* X = new fraction;//выделение памяти под динамическую переменную
-    //X->Init(2.0, 5);//инициализация
-    //X->Show();//вывод значений полей
-    //X->Power();//вычисление степени
-    //cout << "X.Power(" << X->first << "," << X->second << ")=" << X->Power() << endl;
-    ////массивы
-    //fraction mas[3]; //определение массива
-    //for (int i = 0; i < 3; i++)
-    //    mas[i].Read();//чтение значений полей
-    //for (int i = 0; i < 3; i++)
-    //    mas[i].Show(); //вывод значений полей
-    //for (int i = 0; i < 3; i++)
-    //{
-    //    mas[i].Power(); //вычисление степени
-    //    cout << "mas[" << i << "].Power(" << mas[i].first << "," << mas[i].second << ")=";
-    //    cout << mas[i].Power() << endl;
-    //}
-    ////динамические масивы
-    //fraction* p_mas = new fraction[3];//выделение памяти
-    //for (int i = 0; i < 3; i++)
-    //    p_mas[i].Read();//чтение значений полей
-    //for (int i = 0; i < 3; i++)
-    //    p_mas[i].Show();//вывод значений полей
-    //for (int i = 0; i < 3; i++)
-    //{
-    //    p_mas[i].Power();//вычисление степени
-    //    cout << "p_mas[" << i << "].Power(" << p_mas[i].first << "," << p_mas[i].second;
-    //    cout << ")=" << p_mas[i].Power() << endl;
-    //}
-    ////вызов функции make_fraction()
-    //double y; int z;
-    //cout << "first?"; cin >> y;
-    //cout << "second?"; cin >> z;
-    ////переменная F формируется с помощью функции make_fraction()
-    //fraction F = make_fraction(y, z);
-    //F.Show();
     return 0;
 }
-
-//fraction make_fraction(int F, int S)
-//{
-//    fraction t;//создали временную переменную
-//    t.Init(F, S);//инициализировали поля переменной t с помощью параметров функции
-//    return t;//вернули значение переменной t
-//}
 
 
