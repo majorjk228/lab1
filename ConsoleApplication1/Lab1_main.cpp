@@ -7,7 +7,7 @@
 using namespace std;
 
 
-fraction cost_fraction(fraction t)
+fraction make_fraction(fraction t)
 {
     t.Show(); //инициализировали поля переменной t с помощью параметров функции
     return t; //вернули значение переменной t
@@ -23,7 +23,7 @@ int main()
     fraction fract;
     
     fract.Read();          // Вызываем метод для инциализации введенных данных с клавиатуры
-    cost_fraction(fract);  // Отправляем наш объект на вывод
+    make_fraction(fract);  // Отправляем наш объект на вывод
 
     
     cout << "\n";
